@@ -1,3 +1,3 @@
 require("express")()
-  .get("/", (_, res) => res.send("hello world"))
+  .get("/", (_, s) => s.send("hi"))
   .listen(3000);
