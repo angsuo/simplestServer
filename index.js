@@ -1,5 +1,3 @@
-const app = require('express')();
-
-app.get("/", (_, res) => res.status(200).send("hello world"));
-
-app.listen(3000, () => console.log("server running"))
+require("express")()
+  .get("/", (_, res) => res.send("hello world"))
+  .listen(3000);
